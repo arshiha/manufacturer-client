@@ -3,7 +3,7 @@ import cycle from "../../assets/images/cycle1.jpg";
 
 const Banner = () => {
   return (
-    <div class="hero min-h-screen px-12">
+    <div class="hero min-h-screen">
       <div class="hero-content flex-col lg:flex-row-reverse">
         <img src={cycle} class="max-w-sm rounded-lg shadow-2xl" />
         <div>
