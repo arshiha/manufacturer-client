@@ -2,10 +2,10 @@ import React from "react";
 import review1 from "../../../assets/images/reviews/review1.webp";
 import review2 from "../../../assets/images/reviews/review2.webp";
 import review3 from "../../../assets/images/reviews/review3.jpg";
-import Reviews from "../Reviews/Reviews.js";
+import Clients from "../Clients/Clients.js";
 
-const Review = () => {
-  const reviews = [
+const Client = () => {
+  const clients = [
     {
       _id: 1,
       name: "Herry Smith",
@@ -37,12 +37,12 @@ const Review = () => {
         {/* <h2 className="text-3xl">Client Says</h2> */}
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 flex justify-center">
-        {reviews.map((review) => (
-          <Reviews key={review._id} review={review}></Reviews>
+        {clients.map((client) => (
+          <Clients key={client._id} client={client}></Clients>
         ))}
       </div>
     </div>
   );
 };
 
-export default Review;
+export default Client;

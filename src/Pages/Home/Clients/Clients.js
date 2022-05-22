@@ -1,7 +1,7 @@
 import React from "react";
 
-const Reviews = ({ review }) => {
-  const { name, img, description } = review;
+const Clients = ({ client }) => {
+  const { name, img, description } = client;
 
   return (
     <div className="card lg:max-w-lg bg-base-100 shadow-xl">
@@ -17,4 +17,4 @@ const Reviews = ({ review }) => {
   );
 };
 
-export default Reviews;
+export default Clients;

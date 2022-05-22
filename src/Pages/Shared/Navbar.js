@@ -1,34 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Navbar.css";
 
 const Navbar = () => {
   const navItems = (
     <>
-      <li>
+      <li className="text-white">
         <Link to="/">Home</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/about">About</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/purchase">Purchase</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/review">Review</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/blogs">Blogs</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/contact">Contact Us</Link>
       </li>
-      <li>
+      <li className="text-white">
         <Link to="/login">Login</Link>
       </li>
     </>
   );
   return (
-    <div class="navbar bg-base-100">
+    <div class="navbar bg-cyan-700">
       <div class="navbar-start">
         <div class="dropdown">
           <label tabindex="0" class="btn btn-outline btn-success lg:hidden">
@@ -54,7 +55,12 @@ const Navbar = () => {
             {navItems}
           </ul>
         </div>
-        <a class="normal-case text-2xl text-cyan-600">
+        <img
+          className="navbar-img"
+          src="https://i.pinimg.com/originals/af/58/20/af5820d603499c6acfd5bca13cf3f76e.jpg"
+          alt=""
+        />
+        <a class="normal-case text-2xl text-white text-bold">
           Bicycle Parts Manufacturer
         </a>
       </div>
