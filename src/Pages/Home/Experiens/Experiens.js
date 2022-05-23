@@ -2,7 +2,7 @@ import React from "react";
 
 const Experiens = ({ experiens }) => {
   return (
-    <div class="card lg:max-w-lg shadow-xl mt-16 ">
+    <div class="card lg:max-w-lg shadow-xl mt-16">
       <figure class="px-10 pt-10 h-40">
         <img
           className="object-cover h-48 w-96"

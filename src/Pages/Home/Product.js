@@ -29,7 +29,7 @@ const Product = ({ product }) => {
         </p>
         <div class="card-actions">
           <button class="btn btn-primary bg-gradient-to-r from-cyan-500 to-blue-500">
-            Buy Now
+            Purchase
           </button>
         </div>
       </div>
