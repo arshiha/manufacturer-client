@@ -11,17 +11,17 @@ const Navbar = () => {
       <li className="text-white">
         <Link to="/about">About</Link>
       </li>
-      <li className="text-white">
+      {/* <li className="text-white">
         <Link to="/purchase">Purchase</Link>
-      </li>
+      </li> */}
       <li className="text-white">
         <Link to="/review">Review</Link>
       </li>
       <li className="text-white">
-        <Link to="/blogs">Blogs</Link>
+        <Link to="/blog">Blog</Link>
       </li>
       {/* <li className="text-white">
-        <Link to="/contact">Contact Us</Link>
+        <Link to="/contact">Contact</Link>
       </li> */}
       <li className="text-white">
         <Link to="/login">Login</Link>
@@ -29,13 +29,13 @@ const Navbar = () => {
     </>
   );
   return (
-    <div class="navbar bg-cyan-700">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-outline btn-success lg:hidden">
+    <div className="navbar bg-cyan-700">
+      <div className="navbar-start">
+        <div className="dropdown">
+          <label tabindex="0" className="btn btn-outline btn-success lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
+              className="h-5 w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -50,7 +50,7 @@ const Navbar = () => {
           </label>
           <ul
             tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navItems}
           </ul>
@@ -60,12 +60,12 @@ const Navbar = () => {
           src="https://i.pinimg.com/originals/af/58/20/af5820d603499c6acfd5bca13cf3f76e.jpg"
           alt=""
         />
-        <a class="normal-case text-2xl text-white text-bold">
+        <a className="normal-case text-2xl text-white text-bold">
           Bicycle Parts Manufacturer
         </a>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">{navItems}</ul>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal p-0">{navItems}</ul>
       </div>
     </div>
   );
