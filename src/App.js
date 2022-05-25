@@ -16,12 +16,12 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        <Route path="review" element={<Review />} />
-        <Route path="blog" element={<Blog />} />
-        <Route path="purchase/:productId" element={<Purchase></Purchase>} />
-        <Route path="login" element={<Login />} />
-        <Route path="signUp" element={<SignUp />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/review" element={<Review />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/purchase/:productId" element={<Purchase></Purchase>} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>

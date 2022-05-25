@@ -8,7 +8,7 @@ const Experiens = ({ experiens }) => {
           className="object-cover h-48 w-96"
           src={experiens.img}
           alt="Cycle"
-          className="rounded-xl"
+          // className="rounded-xl"
         />
       </figure>
       <div className="card-body items-center text-center">

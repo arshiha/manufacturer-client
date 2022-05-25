@@ -4,6 +4,7 @@ import Client from "./Client/Client.js";
 import Experiences from "./Experiences/Experiences.js";
 import Footer from "./Footer/Footer.js";
 import Products from "./Products.js";
+import Summary from "./Summary/Summary.js";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Banner></Banner>
       <Products></Products>
       <Client></Client>
+      <Summary></Summary>
       <Experiences></Experiences>
       <Footer></Footer>
     </div>

@@ -7,7 +7,7 @@ import auth from "../../firebase.init.js";
 import { useForm } from "react-hook-form";
 import login from "../../assets/images/login/login.jpg";
 import Loading from "../Shared/Loading.js";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
@@ -19,6 +19,8 @@ const Login = () => {
 
   const [signInWithEmailAndPassword, user, loading, error] =
     useSignInWithEmailAndPassword(auth);
+
+  const nagitive = useNavigate();
 
   let errorMessage;
 
@@ -40,6 +42,7 @@ const Login = () => {
     console.log(data);
     signInWithEmailAndPassword(data.email, data.password);
   };
+  nagitive("/");
 
   return (
     <div className="flex justify-center items-center h-screen">

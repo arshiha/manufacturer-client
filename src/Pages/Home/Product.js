@@ -9,7 +9,7 @@ const Product = ({ product }) => {
           className="object-cover h-48 w-96"
           src={product.img}
           alt="product"
-          className="rounded-xl"
+          // className="rounded-xl"
         />
       </figure>
       <div className="card-body items-center text-center">

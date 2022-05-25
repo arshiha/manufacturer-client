@@ -1,4 +1,4 @@
-import React from "react";
+// import React, { useState, useEffect } from "react";
 import tyre from "../../assets/images/tyre1.jpg";
 import chainRing from "../../assets/images/chainRing.jpg";
 import frame from "../../assets/images/fram.jpg";
@@ -70,6 +70,15 @@ const Products = () => {
       price: "320",
     },
   ];
+
+  // const [product, setProduct] = useState([]);
+
+  // useEffect(() => {
+  //   fetch("http://localhost:5000/product")
+  //     .then((res) => res.json())
+  //     .then((data) => setProduct(data));
+  // }, []);
+
   return (
     <div>
       <div className="text-primary text-center text-2xl font-bold mb-20">
