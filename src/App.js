@@ -8,6 +8,7 @@ import Login from "./Pages/Login/Login.js";
 import Purchase from "./Pages/Purchase/Purchase.js";
 import NotFound from "./Pages/Shared/NotFound/NotFound.js";
 import Review from "./Pages/Review/Review.js";
+import SignUp from "./Pages/Login/SignUp.js";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="blog" element={<Blog />} />
         <Route path="purchase/:productId" element={<Purchase></Purchase>} />
         <Route path="login" element={<Login />} />
+        <Route path="signUp" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
