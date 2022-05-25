@@ -9,6 +9,14 @@ import Purchase from "./Pages/Purchase/Purchase.js";
 import NotFound from "./Pages/Shared/NotFound/NotFound.js";
 import Review from "./Pages/Review/Review.js";
 import SignUp from "./Pages/Login/SignUp.js";
+import Dashboard from "./Pages/Dashboard/Dashboard.js";
+import RequireAuth from "./Pages/Login/RequireAuth.js";
+import MyReview from "./Pages/Dashboard/MyReview.js";
+import MyHistory from "./Pages/Dashboard/MyHistory.js";
+// import MyProfile from "./Pages/Dashboard/MyProfile.js";
+// import AddProduct from "./Pages/Dashboard/AddProduct.js";
+// import ManageOrders from "./Pages/Dashboard/ManageOrders.js";
+// import ManageUser from "./Pages/Dashboard/ManageUser.js";
 
 function App() {
   return (
@@ -20,6 +28,21 @@ function App() {
         <Route path="/review" element={<Review />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/purchase/:productId" element={<Purchase></Purchase>} />
+        <Route
+          path="dashboard"
+          element={
+            <RequireAuth>
+              <Dashboard></Dashboard>
+            </RequireAuth>
+          }
+        >
+          {/* <Route index element={<MyProfile></MyProfile>}></Route>
+          <Route index element={<AddProduct></AddProduct>}></Route>
+          <Route index element={<ManageOrders></ManageOrders>}></Route>
+          <Route index element={<ManageUser></ManageUser>}></Route> */}
+          <Route index element={<MyHistory></MyHistory>}></Route>
+          <Route path="review" element={<MyReview></MyReview>}></Route>
+        </Route>
         <Route path="/login" element={<Login />} />
         <Route path="/signUp" element={<SignUp />} />
         <Route path="*" element={<NotFound></NotFound>}></Route>
