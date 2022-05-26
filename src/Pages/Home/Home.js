@@ -4,6 +4,7 @@ import Client from "./Client/Client.js";
 import Experiences from "./Experiences/Experiences.js";
 import Footer from "./Footer/Footer.js";
 import Products from "./Products.js";
+import Reviews from "./Reviews/Reviews.jsx";
 import Summary from "./Summary/Summary.js";
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
       <Products></Products>
       <Client></Client>
       <Summary></Summary>
+      <Reviews></Reviews>
       <Experiences></Experiences>
       <Footer></Footer>
     </div>

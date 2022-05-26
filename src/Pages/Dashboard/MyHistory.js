@@ -9,7 +9,9 @@ const MyHistory = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/product?orderQuantity=${user.order}`)
+      fetch(
+        `https://frozen-waters-73910.herokuapp.com/product?orderQuantity=${user.order}`
+      )
         .then((res) => res.json())
         .then((data) => setOrders(data));
     }
