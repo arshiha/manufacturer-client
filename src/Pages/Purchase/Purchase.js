@@ -48,7 +48,57 @@ const Purchase = () => {
           </div>
         </div>
       </div>
-      <div></div>
+      <div>
+        <input
+          type="text"
+          placeholder="Product Name"
+          class="input input-bordered input-xs w-full max-w-xs my-5 input-primary"
+        />
+
+        <input
+          type="text"
+          placeholder="Min Order"
+          class="input input-bordered input-sm w-full max-w-xs my-5 input-primary"
+        />
+        <div className=" mx-5">
+          <input
+            type="text"
+            placeholder="purchase"
+            class="input input-bordered w-20 max-h-8 max-w-xs my-5 input-primary"
+          />
+          <input
+            type="text"
+            placeholder="AQ"
+            class="input input-bordered w-20 max-h-8 max-w-xs my-5 input-primary mx-5"
+          />
+          <input
+            type="text"
+            placeholder="price"
+            class="input input-bordered w-20 max-h-8 max-w-xs my-5 input-primary"
+          />
+        </div>
+
+        <input
+          type="text"
+          placeholder="Phone Number"
+          class="input input-bordered input-xs w-full max-w-xs my-5 input-primary"
+        />
+
+        <input
+          type="text"
+          placeholder="Shiping Address"
+          class="input input-bordered input-md w-full max-w-xs my-5 input-primary"
+        />
+
+        <input
+          type="text"
+          placeholder="Description"
+          class="input input-bordered input-lg w-full max-w-xs my-5 input-primary"
+        />
+        <button class="btn btn-primary input-lg w-full max-w-xs my-5 input-primary max-h-8">
+          Purchase Now
+        </button>
+      </div>
     </div>
   );
 };

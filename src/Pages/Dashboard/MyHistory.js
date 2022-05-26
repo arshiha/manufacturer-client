@@ -26,7 +26,7 @@ const MyHistory = () => {
               <th>Name</th>
               <th>Price</th>
               <th>Quantity</th>
-              <th>Order</th>
+              <th>Min Order</th>
             </tr>
           </thead>
           <tbody>

@@ -54,7 +54,7 @@ const About = () => {
               modern language, it is being set using
             </p>
           </Col>
-          <Col md={6} xs={12}>
+          {/* <Col md={6} xs={12}>
             <h4 className="text-secondary">
               4.Why you do not set the state directly in React. For example, if
               you have const [products, setProducts] = useState([]). Why you do
@@ -71,8 +71,8 @@ const About = () => {
               Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in
               modern language, it is being set using
             </p>
-          </Col>
-          <Col md={6} xs={12}>
+          </Col> */}
+          {/* <Col md={6} xs={12}>
             <h4 className="text-secondary">
               5.You have an array of products. Each product has a name, price,
               description, etc. How will you implement a search to find products
@@ -89,8 +89,8 @@ const About = () => {
               Object.getPrototypeOf and Object.setPrototypeOf. Nowadays, in
               modern language, it is being set using
             </p>
-          </Col>
-          <Col md={6} xs={12}>
+          </Col> */}
+          {/* <Col md={6} xs={12}>
             <h4 className="text-secondary">
               6.What is a unit test? Why should write unit tests?
             </h4>
@@ -102,7 +102,7 @@ const About = () => {
               programming, a unit could be an entire module, but it is more
               commonly an individual function or procedure.
             </p>
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </div>

@@ -27,7 +27,15 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/review" element={<Review />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/purchase/:productId" element={<Purchase></Purchase>} />
+        <Route
+          path="/purchase/:productId"
+          element={
+            <RequireAuth>
+              <Purchase></Purchase>
+            </RequireAuth>
+          }
+        />
+
         <Route
           path="dashboard"
           element={
