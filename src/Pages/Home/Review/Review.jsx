@@ -1,8 +1,7 @@
 import React from "react";
-import Rating from "react-rating";
 
 const Review = ({ userReview }) => {
-  const { stars, review, user, email, photo } = userReview;
+  const { review, user, email, photo } = userReview;
   return (
     <div className="card lg:max-w-lg bg-base-100 shadow-xl">
       <figure className="px-10 pt-10">
@@ -17,16 +16,39 @@ const Review = ({ userReview }) => {
         <h1 className="card-title">{user}</h1>
         <h5 className="text-1xl font-semibold">{email}</h5>
         <p>{review.slice(0, 100)}</p>
-        <Rating
-          className="d-block text-end"
-          readonly
-          initialRating={stars}
-          fullSymbol="fas fa-star text-warning"
-          emptySymbol="far fa-star"
-        ></Rating>
+        <div class="rating rating-lg">
+          <input
+            type="radio"
+            name="rating-8"
+            class="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-8"
+            class="mask mask-star-2 bg-orange-400"
+            checked
+          />
+          <input
+            type="radio"
+            name="rating-8"
+            class="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-8"
+            class="mask mask-star-2 bg-orange-400"
+          />
+          <input
+            type="radio"
+            name="rating-8"
+            class="mask mask-star-2 bg-orange-400"
+          />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Review;
+
+// assainment 12 private to public
